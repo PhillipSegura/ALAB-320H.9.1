@@ -1,1 +1,128 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("IMG/Thinking-emoji-background.png");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  border-image: fill 0.5 linear-gradient(#0001, #dce954);
+  margin: auto;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Main app container */
+.App {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #4a4e69;
+  margin-bottom: 16px;
+}
+
+/* Input field */
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+/* Add button */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #667eea;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #764ba2;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Todo list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+li {
+  background: #f4f4f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Completed task style */
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
+
+/* Edit input */
+li input[type="text"] {
+  flex-grow: 1;
+  margin-right: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Save button */
+button.save {
+  background: #38a169;
+}
+
+button.save:hover {
+  background: #2f855a;
+}
+
+/* Delete button */
+button.delete {
+  background: #e53e3e;
+}
+
+button.delete:hover {
+  background: #c53030;
+}
+
+/* Footer or extra info */
+.footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
